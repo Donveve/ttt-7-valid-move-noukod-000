@@ -4,19 +4,19 @@ def valid_move?( board, index)
     if array[ind] == " "|| array[ind] == " " || array[ind] == nil
       return false
     else
-      return 
+      return
     end
   end
-  
+
 def on_board?(num)
   if num.between?(0 ,8) == true
     return true
-  else 
+  else
     return false
   end
 end
 
-if (position_taken?(board, index))== false && (on_board?(index) ==true)
+if (position_taken?(board, index)) == false && (on_board?(index) ==true)
   return true
 else
   return false
